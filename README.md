@@ -1,5 +1,9 @@
 ### Hi there 👋
  🔭 I’m currently working on a Nintex Mobile Application
+ 
+ ### :ghost: I enjoy contributing to projects
+ ## projects I contributed to
+ 
 <!--
 **Ruandv/Ruandv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
