@@ -1,8 +1,13 @@
-### Hi there 👋
- 🔭 I’m currently working on a Nintex Mobile Application
+### Hi this is just a short story of my life as a developer 👋
+ 🔭 I’m currently working with a very strong team on a Nintex Mobile Application
  
- ### :ghost: I enjoy contributing to projects
- ## projects I contributed to
+ :ghost: I enjoy contributing to open source projects that I use regularly
+  
+ projects I contributed to
+ - [tzapu/WiFiManager](https://github.com/tzapu/WiFiManager)
+ - [bluecaret/carettab](https://github.com/bluecaret/carettab)
+ 
+ 
  
 <!--
 **Ruandv/Ruandv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
