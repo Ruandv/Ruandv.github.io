@@ -1,0 +1,105 @@
+body {
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  font-family: "Lora", serif;
+  border: 0px;
+  margin: 0px;
+  height: 100vh;
+}
+.page {
+  display: flex;
+  height: 100%;
+  margin: 0px 15%;
+}
+
+.left {
+  background-color: rgb(65, 65, 65);
+  color: aliceblue;
+  min-width: 200px;
+  width: 20%;
+  padding: 15px;
+  padding-top: 40px;
+}
+.about {
+  padding-bottom: 30px;
+  border-bottom: 1px solid;
+}
+.myInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.myPhoto {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.myDetail {
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.myContactDetail {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.right {
+  background-color: antiquewhite;
+  color: rgb(141, 142, 144);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  padding-top: 40px;
+}
+
+.right .myInfo {
+  flex-direction: row;
+  height: 200px;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+}
+
+.companyRecord {
+  display: flex;
+}
+
+.companyInfo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-right: 10px;
+  border-right: 1px dotted rgb(141, 142, 144);;
+}
+
+.companyName {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.dot {
+  min-width: 16px;
+  min-height: 16px;
+  position: absolute;
+  right: -9px;
+  top: 10px;
+  background-color: rgb(141, 142, 144);;
+  border-radius: 50px;
+  display: inline; 
+}
+
+.employmentResponsibilities {
+  margin-left: 10px;
+  width: 100%;
+}
+.companyDuration {
+  padding-left: 20px;
+  font-size: smaller;
+  min-width:300px;
+}
