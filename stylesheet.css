@@ -75,7 +75,8 @@ body {
   position: relative;
   flex-direction: column;
   padding-right: 10px;
-  border-right: 1px dotted rgb(141, 142, 144);;
+  max-width: 320px;
+  border-right: 1px dotted rgb(141, 142, 144);
 }
 
 .companyName {
@@ -89,9 +90,9 @@ body {
   position: absolute;
   right: -9px;
   top: 10px;
-  background-color: rgb(141, 142, 144);;
+  background-color: rgb(141, 142, 144);
   border-radius: 50px;
-  display: inline; 
+  display: inline;
 }
 
 .employmentResponsibilities {
@@ -101,5 +102,64 @@ body {
 .companyDuration {
   padding-left: 20px;
   font-size: smaller;
-  min-width:300px;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-image: unset;
+    background-size: unset;
+  }
+  .page {
+    margin: 0px 0px;
+    padding:0px 5px;
+    flex-direction: column;
+    background-color: rgb(65, 65, 65);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+    padding-top: 40px;
+  }
+
+  .right{
+    padding: 0px;
+  }
+
+  .myInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    min-width: unset;
+  }
+
+  .about {
+    padding-bottom: 30px;
+    border-bottom: none;
+  }
+  .workingExperience {
+    display: flex;
+    flex-direction: column;
+  }
+  .companyRecord {
+    padding-top :15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .companyInfo{
+    border-right: none;
+  }
+
+  .dot{
+    display: none;
+  }
+  .employmentResponsibilities {
+    margin-left: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted rgb(141, 142, 144);
+  }
 }
