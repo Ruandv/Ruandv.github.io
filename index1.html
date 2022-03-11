@@ -5,98 +5,322 @@
     }
 
     .holder {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         counter-reset: line-number;
     }
 
-
-
-    a:before {
-        content: counter(line-number)" -  ";
+    .caption {
+        width: 100%;
+        padding: 5px;
+        background-color: brown;
+        font-size: 30px;
+        text-align: center;
     }
 
-    a {
-        margin: 20px;
-        counter-increment: line-number;
-        font-size: 24px;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        background-color: beige;
         border-radius: 4px;
         border: 1px solid black;
         padding: 10px;
-        max-width: 200px;
-        height: 100px;
-        text-align: center;
-        background-color: beige;
+        margin: 20px;
+        height: 50px;
+        min-width: 45%;
+        counter-increment: line-number;
     }
 
-    a:hover {
-        font-size: 30px;
+    .card .container:before {
+        content: counter(line-number)" -  ";
+    }
+
+
+    a {
+        font-size: 24px;
+        max-width: 200px;
+
+        text-align: center;
+    }
+    .red{
+        background-color: gray;
+    }
+    .card:hover {
         background-color: gold;
+        cursor: pointer;
     }
 </style>
 
 <body><br />
     <br />
     <div class="holder">
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EjCBAbeAOThrg54r6H5MXh"> BFG
-            Child Process 2</a> <br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/B2gWhkYgTzqx3xkbmmV6CR">CB
-            test hierarchy Process</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/He4sSAaLYbqms2hHZvkxch">Funky
-            long description</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GtcJhA8FdorCwYy1GlJB7k">Obtain
-            approval to recruit</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CDrIrt5D5G9LFZt7sgbG7I">Advertise
-            position</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/FMa9qo9BCVpt79fSQtCpYD">Select
-            a candidate</a><br />
-        <a
-            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/BawabD6EWrBXHeHtcS9zc1">Negotiate</a><br />
-        <a
-            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EpXni96yS6Zd4wDKi9SUeY">Obtaion</a><br />
-        <a
-            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GtEHyfGCBlsVN3O1wfuDxQ">Yolande</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/HmRxGOL5kdknJOjfpCDu7F">BFG
-            Attachments</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EEgqwcsol1BN2pJSNFIkb1">BFG
-            Child Process 2</a><br />
-        <a
-            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/irGuQaaBhmGlTJ56au4zC">ANOTHER</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GW0AkZZ1VcV2FaNxl50WmA">Bsd
-            2</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/BWg5ZFW3hONZk9JlOZjimh">sdfs
-            2</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GfbipJt0fBzoaC4BTI1wM4">BFG
-            Chi ess 2</a><br />
+        <div class="caption">Unauthorized Mini Mode Links
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EjCBAbeAOThrg54r6H5MXh">
+                            BFG Process 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/B2gWhkYgTzqx3xkbmmV6CR">
+                            CB s
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/He4sSAaLYbqms2hHZvkxch">
+                            Funky description
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GtcJhA8FdorCwYy1GlJB7k">
+                            Obtainl to recruit
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CDrIrt5D5G9LFZt7sgbG7I">
+                            Advertisen
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/FMa9qo9BCVpt79fSQtCpYD">
+                            Select a candidate
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/BawabD6EWrBXHeHtcS9zc1">
+                            Negotiate
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EpXni96yS6Zd4wDKi9SUeY">
+                            Obtaion
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GtEHyfGCBlsVN3O1wfuDxQ">
+                            Yolande
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/HmRxGOL5kdknJOjfpCDu7F">
+                            BFG Attachments
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EEgqwcsol1BN2pJSNFIkb1">
+                            BFG Process 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/irGuQaaBhmGlTJ56au4zC">
+                            ANOTHER
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GW0AkZZ1VcV2FaNxl50WmA">
+                            Bsd 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/BWg5ZFW3hONZk9JlOZjimh">
+                            sdfs 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GfbipJt0fBzoaC4BTI1wM4">
+                            BFG Chi ess 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GXWEDi879ndrpEfTnzL4SN">
+                            BFG Chi ess 2
+                        </a>
+                    </div>
+                </div>
 
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GXWEDi879ndrpEfTnzL4SN">BFG
-            Chi ess 2</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CmErxtIGe0G2yqfKYrvAfE">B
-            2</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GFHPm6mczsKwH7JHTw9Cma">BFG
-            Chi ess 2</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CarWgLTIduEPZVZFtgoZbo">BFG
-            C 2</a><br />
-        <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CkT60rCXK4b1fITUOMe175">BFGasdf
-            C 2</a><br />
-
-
-<a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/B1QZX5ll9xAVOaKnAxYVqe">
-    NEW 1</a><br />
-
-    <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/HTyEta4AXOwAvyc8LHP7LV">New 2</a><br />
-
-    <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CoyXItpamJXBuq3XB1jlqm">New 3</a><br />
-    <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/FoH0gAchxD80VQiQCrRw6Q">New 444</a><br />
-    <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/DGhIUJSP0Et7NlvAATzQx4">Final </a><br />
-
-    <a href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CkhgKoV6NGacosyq2ZAQ1L">PROCESS GROUP</a><br />
-    
-    
-    </div>
-    <br />
-    <br />
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/GFHPm6mczsKwH7JHTw9Cma">
+                            BFG Chi ess 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CarWgLTIduEPZVZFtgoZbo">
+                            BFG C 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CkT60rCXK4b1fITUOMe175">
+                            BFGasdf C 2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/B1QZX5ll9xAVOaKnAxYVqe">
+                            NEW 1
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/HTyEta4AXOwAvyc8LHP7LV">
+                            New2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CoyXItpamJXBuq3XB1jlqm">
+                            New 3
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/FoH0gAchxD80VQiQCrRw6Q">
+                            New 444
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/DGhIUJSP0Et7NlvAATzQx4">
+                            Final
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CmErxtIGe0G2yqfKYrvAfE">
+                            B2
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <a
+                            href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/CkhgKoV6NGacosyq2ZAQ1L">
+                            PROCESS GROUP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="holder">
+            <div class="caption red">
+                Authorization Required Minimode links
+                <div class="row">
+                    <div class="card">
+                        <div class="container">
+                            <a
+                                href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/xTyv745SBgJdc1k5WO8nA">
+                                Minimode Group - Finance
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <a
+                                href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/Eh6fFYCqwsIwXiUxzbEDHY">
+                                Finance Group Link with 3 processes in
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <a
+                                href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/EiTNMv11oKqhSsQ1YWroCk">
+                                Pay creditors by EFT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <a
+                                href="https://tst-wus-corweb.promapponline.com/raptors/Process/Minimode/Permalink/HSxC375fP50tl7j0tiEeq9">
+                                Enter an invoice
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body><br />
 
 </html>
