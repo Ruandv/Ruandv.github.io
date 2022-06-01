@@ -153,8 +153,8 @@ footer {
     width: 100%;
     padding: 0px;
     padding-top: 40px;
-  } 
-  
+  }
+
   .about {
     padding-bottom: 30px;
     border-bottom: none;
@@ -162,7 +162,7 @@ footer {
   .right {
     padding: 0px;
   }
-  
+
   .right .myInfo {
     display: flex;
     flex-direction: column;
@@ -170,37 +170,9 @@ footer {
     min-width: unset;
   }
 
-  
-.companyDuration {
-  padding-left: 20px;
-  font-size: smaller;
-  min-width: 120px;
-}
-
-  /*
-
-  
-
-  .workingExperience {
-    display: flex;
-    flex-direction: column;
+  .companyDuration {
+    padding-left: 20px;
+    font-size: smaller;
+    min-width: 120px;
   }
-  .companyRecord {
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .companyInfo {
-    border-right: none;
-  }
-
-  .dot {
-    display: none;
-  }
-  .employmentResponsibilities {
-    margin-left: 0px;
-    padding-bottom: 20px;
-    border-bottom: 1px dotted rgb(141, 142, 144);
-  } */
 }
