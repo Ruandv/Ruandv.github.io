@@ -6,15 +6,31 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100vh;
+  overflow: hidden;
 }
 
 .page {
   box-sizing: border-box;
   padding: 5px;
-  height: 100vh;
   display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  background-color: saddlebrown;
 }
-
+.content {
+  background-color: blue;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: 20px;
+}
+footer {
+  position: absolute;
+  background-color: transparent;
+  bottom: 5px;
+}
 .left {
   padding: 10px;
   background-color: rgb(65, 65, 65);
@@ -52,10 +68,13 @@ body {
 }
 
 .right {
+  padding-bottom: 20px;
+  box-sizing: border-box;
   background-color: antiquewhite;
   color: rgb(22, 22, 22);
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .right .myInfo {
@@ -109,42 +128,59 @@ body {
 .history {
   padding: 0px 10px;
   overflow-y: auto;
+  height: calc(100%-250px);
 }
+
 @media screen and (max-width: 425px) {
   body {
     background-image: unset;
     background-size: unset;
+    background-color: red;
   }
   .page {
     margin: 0px 0px;
     padding: 0px 5px;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(65, 65, 65);
+    overflow: scroll;
   }
-
+  .content {
+    flex-direction: column;
+  }
   .left {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     padding: 0px;
     padding-top: 40px;
-  }
-
-  .right {
-    padding: 0px;
-  }
-
-  .myInfo {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    min-width: unset;
-  }
-
+  } 
+  
   .about {
     padding-bottom: 30px;
     border-bottom: none;
   }
+  .right {
+    padding: 0px;
+  }
+  
+  .right .myInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-width: unset;
+  }
+
+  
+.companyDuration {
+  padding-left: 20px;
+  font-size: smaller;
+  min-width: 120px;
+}
+
+  /*
+
+  
+
   .workingExperience {
     display: flex;
     flex-direction: column;
@@ -166,5 +202,5 @@ body {
     margin-left: 0px;
     padding-bottom: 20px;
     border-bottom: 1px dotted rgb(141, 142, 144);
-  }
+  } */
 }

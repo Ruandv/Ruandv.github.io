@@ -1,0 +1,22 @@
+{
+  "name": "ruandv.github.io",
+  "version": "1.0.0",
+  "description": "MyCV",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruandv/Ruandv.github.io.git"
+  },
+  "author": "Ruan de Villiers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruandv/Ruandv.github.io/issues"
+  },
+  "homepage": "https://github.com/Ruandv/Ruandv.github.io#readme",
+  "dependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
