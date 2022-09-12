@@ -1,26 +1,48 @@
 <html>
 <style>
     .panel {
-        display: grid;
+        display: flex;
         background-color: lightgoldenrodyellow;
     }
-    hr{
-        color:purple;
+
+    hr {
+        color: purple;
         background-color: purple;
+    }
+
+    .container {
+        margin: 30px;
+
+        background-color: navajowhite;
     }
 </style>
 
 <body>
-    <div class="panel">
-        Panel
-    </div>
-    
-    <hr/>
+    <div class="container">
+        Without aria-hidden
+        <div class="panel">
+            Panel
+        </div>
 
-    <div class="panel">
-        Panel 2
+        <hr />
+
+        <div class="panel">
+            Panel 2
+        </div>
     </div>
-    
+
+    <div class="container">
+        With aria-hidden
+        <div class="panel">
+            Panel
+        </div>
+
+        <hr aria-hidden="true" />
+
+        <div class="panel">
+            Panel 2
+        </div>
+    </div>
 </body>
 
 </html>
