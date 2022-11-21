@@ -1,0 +1,1 @@
+{"generatedAt":1669024050028,"builder":{"name":"webpack4"},"hasCustomBabel":false,"hasCustomWebpack":false,"hasStaticDirs":false,"hasStorybookEslint":false,"refCount":0,"monorepo":"Lerna","packageManager":{"type":"yarn","version":"1.22.17"},"language":"javascript","storybookPackages":{"@web/dev-server-storybook":{"version":"0.5.4"}},"framework":{},"addons":{}}
