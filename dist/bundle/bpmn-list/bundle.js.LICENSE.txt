@@ -1,12 +1,8 @@
-/**
- * @license
- * Copyright 2017 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */
+/*! For license information please see index.js.LICENSE.txt */
 
 /**
  * @license
- * Copyright 2019 Google LLC
+ * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
