@@ -2,7 +2,7 @@
   {
     name: 'mfe1',
     path: '/mfe1',
-    url: 'https://example.com/mfe1.js',
+    url: 'https://ruandv.github.io/micro1/mfe1.js',
     scope: 'mfe1',
     module: './mfe1',
     routes: {
