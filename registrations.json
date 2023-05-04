@@ -1,0 +1,26 @@
+[
+  {
+    name: 'mfe1',
+    path: '/mfe1',
+    url: 'https://example.com/mfe1.js',
+    scope: 'mfe1',
+    module: './mfe1',
+    routes: {
+      '/': 'HomePage',
+      '/about': 'AboutPage',
+      '/contact': 'ContactPage'
+    }
+  },
+  {
+    name: 'Microfrontend 2',
+    path: '/microfrontend2',
+    url: 'https://example.com/microfrontend2.js',
+    scope: 'microfrontend2',
+    module: './Microfrontend2',
+    routes: {
+      '/': 'HomePage',
+      '/products': 'ProductsPage',
+      '/cart': 'CartPage'
+    }
+  }
+];
