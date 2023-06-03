@@ -1,0 +1,40 @@
+
+body{
+    background-image: url('./background.png');
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    padding:0;
+    margin:0;
+    height: 100vh;
+}
+
+.page {
+    color:aliceblue;
+    padding: 1em 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo {
+    padding:2em;
+}
+
+.app {
+    font-weight: 700;
+    color: #11FFFF
+}
+
+header {
+
+}
+
+a {
+    color: #11FFFF
+}
