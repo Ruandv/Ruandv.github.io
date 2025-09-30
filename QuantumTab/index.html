@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Tab - Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .page {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #667eea;
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .app {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .logo img {
+            width: 128px;
+            height: 128px;
+            border-radius: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #764ba2;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin-top: 40px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 20px 30px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        p {
+            margin: 16px 0;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #667eea;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class='page'>
+        <div class="content">
+            <header>
+                <h1><span class='app'>Quantum Tab</span> Privacy Policy</h1>
+            </header>
+            
+            <div class="logo">
+                <img src='./get_started128.png' alt="Quantum Tab Logo" />
+            </div>
+
+            <h2>What Data We Collect</h2>
+            <p>
+                <span class='app'>Quantum Tab</span> is designed with privacy as a core principle. Our extension operates locally on your device and collects minimal data to provide you with an enhanced new tab experience:
+            </p>
+            <ul>
+                <li><strong>Website Visit Counts:</strong> URLs and visit frequencies for websites you visit (stored locally)</li>
+                <li><strong>Widget Configurations:</strong> Your personalized dashboard layout and widget settings</li>
+                <li><strong>Background Images:</strong> Custom background images you upload or generate</li>
+                <li><strong>Quick Action Buttons:</strong> Custom shortcuts and bookmarks you create</li>
+                <li><strong>Language Preferences:</strong> Your selected interface language (English or Afrikaans)</li>
+                <li><strong>GitHub Repository Data:</strong> Repository information when you connect via Personal Access Token</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Important:</strong> No personal identifying information, browsing history, or sensitive data is collected. All data remains on your local device.
+            </div>
+
+            <h2>How We Use Your Data</h2>
+            <p>
+                The data collected by <span class='app'>Quantum Tab</span> is used exclusively to enhance your productivity and personalize your new tab experience:
+            </p>
+            <ul>
+                <li><strong>Website Counter Widget:</strong> Display visit statistics and website favicons</li>
+                <li><strong>Dashboard Personalization:</strong> Remember your widget layout and preferences</li>
+                <li><strong>Background Customization:</strong> Store and display your chosen background images</li>
+                <li><strong>Quick Access:</strong> Provide instant access to your frequently used websites</li>
+                <li><strong>GitHub Integration:</strong> Show pull request information from your repositories</li>
+                <li><strong>AI Background Generation:</strong> When enabled, communicate with your chosen LLM provider</li>
+            </ul>
+
+            <h2>Where Is Your Data Stored?</h2>
+            <p>
+                <span class='app'>Quantum Tab</span> prioritizes data privacy by storing all information locally on your device using Chrome's secure storage API. Your data never leaves your browser unless you explicitly enable external integrations:
+            </p>
+
+            <h3>Local Storage (Chrome Extension Storage API)</h3>
+            <ul>
+                <li>Widget configurations and layouts</li>
+                <li>Website visit counters and statistics</li>
+                <li>Custom background images</li>
+                <li>Quick action button configurations</li>
+                <li>Language preferences</li>
+                <li>Dashboard lock states</li>
+            </ul>
+
+            <h3>Optional External Integrations</h3>
+            <p>
+                When you choose to enable external integrations, limited data may be transmitted to third-party services under your explicit control:
+            </p>
+            <ul>
+                <li><strong>GitHub API:</strong> Repository data fetched using your Personal Access Token</li>
+                <li><strong>LLM Providers:</strong> AI image generation prompts sent to OpenAI, Google Gemini, or Azure OpenAI (only when AI backgrounds are enabled)</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Your Control:</strong> You can disable any external integration at any time. API keys and tokens are encrypted before local storage.
+            </div>
+
+            <h2>Data Security</h2>
+            <p>
+                <span class='app'>Quantum Tab</span> implements multiple security measures to protect your data:
+            </p>
+            <ul>
+                <li><strong>Local-First Architecture:</strong> Data remains on your device by default</li>
+                <li><strong>Encrypted API Keys:</strong> All third-party API keys are encrypted before storage</li>
+                <li><strong>Secure Chrome APIs:</strong> Utilizes Chrome's secure storage and permissions system</li>
+                <li><strong>No Data Transmission:</strong> No analytics, tracking, or data collection servers</li>
+                <li><strong>Open Source:</strong> Full transparency with publicly available source code</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>
+                <span class='app'>Quantum Tab</span> may interact with the following third-party services only when explicitly configured by you:
+            </p>
+            <ul>
+                <li><strong>GitHub API:</strong> For repository and pull request information</li>
+                <li><strong>OpenAI API:</strong> For AI-generated background images (optional)</li>
+                <li><strong>Google Gemini API:</strong> For AI-generated background images (optional)</li>
+                <li><strong>Azure OpenAI API:</strong> For AI-generated background images (optional)</li>
+            </ul>
+            <p>
+                These services have their own privacy policies. We recommend reviewing them when enabling these integrations.
+            </p>
+
+            <h2>Your Rights and Control</h2>
+            <p>
+                You have complete control over your data in <span class='app'>Quantum Tab</span>:
+            </p>
+            <ul>
+                <li><strong>Data Deletion:</strong> Remove the extension to delete all stored data</li>
+                <li><strong>Widget Removal:</strong> Individual widgets clean up their data when removed</li>
+                <li><strong>Export Capability:</strong> Access your data through Chrome's extension storage</li>
+                <li><strong>API Key Management:</strong> Add, update, or remove third-party service connections</li>
+                <li><strong>Feature Control:</strong> Enable or disable any feature at any time</li>
+            </ul>
+
+            <h2>Updates to This Policy</h2>
+            <p>
+                We may update this privacy policy to reflect changes in our extension or legal requirements. Any updates will be distributed through extension updates and will be effective immediately upon installation.
+            </p>
+
+            <h2>Contact Information</h2>
+            <p>
+                If you have questions about this privacy policy or <span class='app'>Quantum Tab</span>, please visit our GitHub repository or contact the developer through the link below.
+            </p>
+
+            <div class="last-updated">
+                Last updated: September 30, 2025
+            </div>
+        </div>
+        
+        <footer>
+            <a href="https://ruandv.github.io/" target="_blank" rel="noopener noreferrer">Developer Info</a> | 
+            <a href="https://github.com/Ruandv/Quantum-Tab" target="_blank" rel="noopener noreferrer">Source Code</a>
+        </footer>
+    </div>
+</body>
+</html>
