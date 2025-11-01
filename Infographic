@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Object Wingman - Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-8">
+
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#00A0B0] mb-3">The AI Smart Object Wingman</h1>
+            <p class="text-xl md:text-2xl text-gray-600">Turn Blank Canvases into Intelligent Blueprints.</p>
+        </header>
+
+        <main class="space-y-12 md:space-y-20">
+
+            <section id="problem">
+                <h2 class="text-3xl font-bold text-center mb-4 text-[#CC333F]">The Problem: "Blank Canvas Syndrome"</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-10">Every developer faces it: that daunting, empty screen when starting a new Smart Object. Deciding on the initial properties and data types is a mental hurdle that slows down development before it even begins.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border-l-8 border-[#CC333F]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">BEFORE: The Blank Canvas</h3>
+                        <div class="flex items-center justify-center bg-gray-100 rounded-lg h-48 mb-4">
+                            <span class="text-6xl font-extrabold text-[#CC333F]">0%</span>
+                        </div>
+                        <p class="text-gray-600">Time spent wondering where to even start, stalling momentum and wasting valuable development cycles.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center border-l-8 border-[#00A0B0]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">AFTER: The AI Wingman</h3>
+                        <div class="flex items-center justify-center bg-gray-100 rounded-lg h-48 mb-4">
+                            <span class="text-6xl font-extrabold text-[#00A0B0]">90%</span>
+                        </div>
+                        <p class="text-gray-600">An intelligent blueprint is generated in seconds, giving you a 90% complete starting point to refine.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution">
+                <h2 class="text-3xl font-bold text-center mb-4 text-[#EB6841]">The Solution: Call in Your Wingman</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-10">We built the AI Wingman directly into the Smart Object creation process. It's a simple, powerful assist that eliminates the guesswork and gets you to the build phase faster.</p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center w-full md:w-1/4">
+                        <span class="text-4xl">1.</span>
+                        <h3 class="text-xl font-bold mt-2">Check the Box</h3>
+                        <p class="text-gray-600 mt-1">Simply enable "AI Assist" when creating your Smart Object.</p>
+                    </div>
+                    
+                    <span class="text-4xl font-bold text-[#EB6841] hidden md:block">&rarr;</span>
+                    <span class="text-4xl font-bold text-[#EB6841] md:hidden">&darr;</span>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center w-full md:w-1/3">
+                        <span class="text-4xl">2.</span>
+                        <h3 class="text-xl font-bold mt-2">Describe Your Idea</h3>
+                        <p class="text-gray-600 mt-1">Write a short, natural language description of your object's purpose.</p>
+                    </div>
+                    
+                    <span class="text-4xl font-bold text-[#EB6841] hidden md:block">&rarr;</span>
+                    <span class="text-4xl font-bold text-[#EB6841] md:hidden">&darr;</span>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center w-full md:w-1/4">
+                        <span class="text-4xl">3.</span>
+                        <h3 class="text-xl font-bold mt-2">Get Properties</h3>
+                        <p class="text-gray-600 mt-1">Instantly receive a full list of relevant properties and data types.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="example">
+                <h2 class="text-3xl font-bold text-center mb-4 text-[#EDC951]">From Idea to Blueprint in Seconds</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-10">See it in action. A simple idea for "a booth tracker for a carnival" is instantly transformed into a structured, ready-to-use Smart Object.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">User Input</h3>
+                        <p class="text-lg text-gray-600 font-mono italic p-6 bg-gray-50 rounded-lg">"A booth tracker for a carnival to manage stall rentals, locations, and vendor status."</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">AI-Generated Properties</h3>
+                        <pre class="text-sm text-gray-700 p-6 bg-gray-50 rounded-lg overflow-x-auto">
+BoothName (Text)
+BoothCode (Text)
+Description (Memo)
+Location (Text)
+VendorName (Text)
+IsActive (Yes/No)
+Capacity (Number)
+RentalFee (Decimal)
+PaymentStatus (Text)
+LastInspectionDate (DateTime)
+PermitNumber (Text)
+</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="value">
+                <h2 class="text-3xl font-bold text-center mb-4 text-[#00A0B0]">The Impact: A 90% Head Start</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-10">The value is clear: less time designing, more time building. The AI Wingman fundamentally accelerates your development timeline by transforming a major friction point into a launchpad.</p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-4">Initial Design Completion</h3>
+                        <p class="text-gray-600 text-center mb-4">The AI generates the vast majority of the initial design work, leaving you with the simple task of refinement.</p>
+                        <div class="w-full max-w-md mx-auto h-80 md:h-96">
+                            <div class="relative w-full h-full">
+                                <canvas id="completenessChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-center mb-4">Accelerated Development Timeline</h3>
+                        <p class="text-gray-600 text-center mb-4">By slashing the initial design time, the entire project timeline is compressed, allowing for faster delivery and iteration.</p>
+                        <div class="w-full max-w-md mx-auto h-80 md:h-96">
+                            <div class="relative w-full h-full">
+                                <canvas id="timelineChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-12 mt-12 border-t border-gray-300">
+            <p class="text-gray-600">A Hackathon Project: The AI Smart Object Wingman</p>
+        </footer>
+
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+
+            const MAX_LABEL_LENGTH = 16;
+
+            function wrapLabel(label) {
+                if (label.length <= MAX_LABEL_LENGTH) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + word).length > MAX_LABEL_LENGTH) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                }
+                lines.push(currentLine.trim());
+                return lines;
+            }
+
+            function tooltipTitleCallback(tooltipItems) {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            }
+
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            };
+            
+            const completenessColors = ['#00A0B0', '#EB6841'];
+            const timelineColors = {
+                traditional: '#CC333F',
+                ai: '#00A0B0'
+            };
+
+            const ctxCompleteness = document.getElementById('completenessChart');
+            if (ctxCompleteness) {
+                new Chart(ctxCompleteness, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            wrapLabel('AI-Generated Properties'), 
+                            wrapLabel('User Refinement')
+                        ],
+                        datasets: [{
+                            data: [90, 10],
+                            backgroundColor: completenessColors,
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: chartOptions
+                });
+            }
+
+            const ctxTimeline = document.getElementById('timelineChart');
+            if (ctxTimeline) {
+                new Chart(ctxTimeline, {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            wrapLabel('Phase 1: Initial Design'),
+                            wrapLabel('Phase 2: Development'),
+                            wrapLabel('Phase 3: Refinement')
+                        ],
+                        datasets: [
+                            {
+                                label: 'Traditional Workflow',
+                                data: [8, 15, 5],
+                                backgroundColor: timelineColors.traditional,
+                            },
+                            {
+                                label: 'AI Wingman Workflow',
+                                data: [1, 15, 3],
+                                backgroundColor: timelineColors.ai,
+                            }
+                        ]
+                    },
+                    options: {
+                        ...chartOptions,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Relative Time (e.g., Hours)'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+        })();
+    </script>
+
+</body>
+</html>
