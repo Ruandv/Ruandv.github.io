@@ -1,202 +1,401 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
-  <title>Ruan de Villiers | Developer Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruan de Villiers | Senior Software Engineer & AI Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Dark Blue-Gray */
+            --accent-color: #3498db; /* Modern Blue */
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --light-gray: #ecf0f1;
+        }
 
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
 
-  <meta property="og:title" content="The HR Papers - Ruan de Villiers">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="The HR Papers - Ruan de Villiers.">
-  <meta property="og:image" content="image.png">
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+        }
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        /* ------------------ Header/Contact Bar ------------------ */
+        .header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 30px 40px;
+            text-align: center;
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheet.css" />
+        .header h1 {
+            margin: 0 0 5px 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: var(--light-gray);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info span, .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Placeholder for Icons */
+        .contact-info span::before, .contact-info a::before {
+            content: '•'; 
+            margin-right: 5px;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        /* ------------------ Main Content Layout ------------------ */
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 300px; /* Main content and sidebar for qualifications/education */
+            gap: 40px;
+        }
+        
+        .main-section {
+            padding-right: 20px;
+            border-right: 1px solid var(--light-gray);
+        }
+
+        .sidebar {
+            padding-left: 20px;
+        }
+
+        /* ------------------ General Section Styles ------------------ */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+
+        /* ------------------ About Me ------------------ */
+        .about-me p {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+        
+        .profile-photo {
+            float: right;
+            margin: 0 0 15px 15px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+        }
+
+        /* ------------------ Experience & Education Items ------------------ */
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--light-gray);
+        }
+        
+        .experience-item:last-child, .project-item:last-child, .education-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .job-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .company-info {
+            font-style: italic;
+            color: #777;
+            margin: 2px 0 10px 0;
+            display: block;
+            font-size: 0.95em;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .technologies {
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        /* ------------------ Qualifications & Education (Sidebar) ------------------ */
+        .qualification-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .qualification-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .qualification-item span {
+            font-weight: 600;
+        }
+        
+        .education-item h4 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 0;
+            color: var(--primary-color);
+        }
+        
+        .education-item p {
+            margin: 2px 0 5px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        .education-item ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.9em;
+        }
+        
+        .education-item ul li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+        }
+        
+        .education-item ul li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+        
+        /* ------------------ Media Queries for Responsiveness ------------------ */
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            
+            .main-section {
+                padding-right: 0;
+                border-right: none;
+            }
+            
+            .sidebar {
+                padding-left: 0;
+            }
+            
+            .profile-photo {
+                float: none;
+                display: block;
+                margin: 10px auto 20px auto;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <!-- your content here... -->
-  <div class='page'>
-    <div class="content">
-      <div class='left'>
-        <div class='myInfo'>
-          <img class="myPhoto" src='./images/myPhoto.png' alt='me' />
+    <div class="container">
+        
+        <div class="header">
+            <h1>Ruan de Villiers</h1>
+            <p>Senior Software Engineer & AI Specialist</p>
+            <div class="contact-info">
+                <span>Johannesburg, South Africa, Gauteng</span>
+                <span>+27 (83) 454-5355</span>
+                <a href="mailto:Ruandv@gmail.com">Ruandv@gmail.com</a>
+                <a href="https://www.github.com/ruandv" target="_blank">Ruandv GitHub</a>
+            </div>
         </div>
-        <div class='about'>
-          <h2>ABOUT ME</h2>
-          <p>
-            As a developer,
-            I am always looking for a challenge and ways to better myself as
-            an engineer in the IT Industry. I enjoy doing POC projects with Arduino, NodeJs and AI related stuff.
-          </p>
-        </div>
-        <div class='about'>
-          <h2>Open Source Contributions</h2>
-          <ul>
-            <li><a href='https://github.com/bluecaret/carettab'>Carettab</a></li>
-            <li><a href='https://github.com/tzapu/WiFiManager'>WiFi Manager (ESP)</a></li>
-            <li><a href='https://github.com/LukeGarrigan/planfree.dev'>planfree.dev</a></li>
-          </ul>
-        </div>
-        <div class='about'>
-          <h2>Microsoft Qualifications</h2>
-          <ul class="qualifications">
-            <li><img width="36px" src='https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg' alt='AI-900'/>Azure AI Fundamentals</li>   
-            <li><img width="36px" src='https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg' alt='AZ-900'/> Azure Fundamentals</li>
-            <li><img width="36px" src='https://docs.microsoft.com/en-us/media/learn/certification/badges/mcsa-badge.svg' alt='MCSA'/>MCSA: Web Applications</li>
-          </ul>
-        </div>
-      </div>
 
-      <div class='right'>
-        <div class='myInfo'>
-          <div class='myDetail'>Ruan de Villiers</div>
-          <div class='myContactDetail'>
-            <div>
-              <span><i class="fa-solid fa-address-book fa-sm"></i></span>
-              <span>Johannesburg, South Africa, Gauteng</span>
+        <div class="content">
+            
+            <div class="main-section">
+                
+                <section class="about-me">
+                    <img src="./images/myPhoto.png" alt="Ruan de Villiers Profile Photo" class="profile-photo">
+                    <h2>ABOUT ME</h2>
+                    <p>
+                        As a Senior Engineer, my current focus is leveraging **React, Node.js, and C#** to build scalable, cloud-based applications and microservices. I am deeply passionate about the intersection of software development and **Artificial Intelligence**, always seeking challenging opportunities to apply cutting-edge technologies.
+                    </p>
+                    <p>
+                        I am always looking for a challenge and ways to better myself as an engineer in the IT Industry, enjoying POC projects with **Arduino, NodeJs, and AI related technologies** to drive innovation in development processes and applications.
+                    </p>
+                    <div style="clear: both;"></div>
+                </section>
+
+                <section>
+                    <h2>WORKING EXPERIENCE</h2>
+
+                    <div class="experience-item">
+                        <h3 class="job-title">Senior Engineer</h3>
+                        <span class="company-info">Nintex | Global | 2019-Current</span>
+                        <ul>
+                            <li>I was part of a team that developed the <a href="https://play.google.com/store/apps/details?id=com.nintex.app" target="_blank">Nintex Promapp mobile application</a>.</li>
+                            <li>**Key AI Implementation:** Implemented one of the first AI applications for Promapp and am currently working on an AI Agent designer for the Nintex Workflow Cloud application.</li>
+                            <li>Maintain parts of Promapp (generate from prompt, process models) and create POC projects for new ideas.</li>
+                            <li>Worked on multiple MFE (micro front end) applications to break down the Promapp Monolith application.</li>
+                            <li>Provide guidance and training to junior staff; assist with test automation and setup of environments.</li>
+                        </ul>
+                        <p class="technologies">Technologies used: RestApi, Reactjs, Nodejs, C#, GitHub, Azure DevOps, Typescript</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3 class="job-title">C# Developer</h3>
+                        <span class="company-info">Absolute Systems | Johannesburg, Bryanston | 2017 - 2019</span>
+                        <ul>
+                            <li>Support and re-write internal applications as time allowed.</li>
+                            <li>Integrate new devices into our existing infrastructure to allow a wider variety of supported devices.</li>
+                            <li>Write new applications in Angular 4 and Rest Api (.Net 4.7).</li>
+                        </ul>
+                        <p class="technologies">Technologies used: RestApi, Angular 4</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h3 class="job-title">C# Developer</h3>
+                        <span class="company-info">Clientele Life | Johannesburg, Rivonia | 2012 - 2017</span>
+                        <ul>
+                            <li>Maintain the new Policy Creation application that our team designed and implemented from scratch.</li>
+                            <li>Came up with better ways to make use of the OCR (ABBYY) system.</li>
+                            <li>Support and re-write internal applications as time allowed.</li>
+                        </ul>
+                        <p class="technologies">Technologies used: RestApi, Angularjs, Entity Framework</p>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h2>FEATURED PROJECTS & CONTRIBUTIONS</h2>
+                    <p>A selection of personal Proof-of-Concept projects and Open Source contributions showcasing a passion for innovation and diverse technologies.</p>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">AI/IoT Proof-of-Concept Projects</h3>
+                        <span class="company-info">Personal & Research Initiatives</span>
+                        <ul>
+                            <li>Focus on small-scale projects using **Arduino and NodeJs** to explore automation and edge computing solutions.</li>
+                            <li>Ongoing exploration into **AI-related POCs** to stay current with the latest machine learning and agent technologies. (Mentioned in About Me)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">Open Source Contribution: Carettab</h3>
+                        <a class="company-info" href="https://github.com/bluecaret/carettab" target="_blank">View on GitHub</a>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">Open Source Contribution: WiFi Manager (ESP)</h3>
+                        <a class="company-info" href="https://github.com/tzapu/WiFiManager" target="_blank">View on GitHub</a>
+                    </div>
+                    
+                    <div class="project-item">
+                        <h3 class="job-title">Open Source Contribution: planfree.dev</h3>
+                        <a class="company-info" href="https://github.com/LukeGarrigan/planfree.dev" target="_blank">View on GitHub</a>
+                    </div>
+
+                </section>
+                
             </div>
 
-            <div><span><i class="fa-solid fa-phone fa-sm"></i></span>
-              <span>+27 (83) 454-5355</span>
+            <div class="sidebar">
+                
+                <section>
+                    <h2>MICROSOFT QUALIFICATIONS</h2>
+                    <div class="qualification-item">
+                        <img src="https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Azure AI Fundamentals Badge">
+                        <span>Azure AI Fundamentals (AI-900)</span>
+                    </div>
+                    <div class="qualification-item">
+                        <img src="https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Azure Fundamentals Badge">
+                        <span>Azure Fundamentals (AZ-900)</span>
+                    </div>
+                    <div class="qualification-item">
+                        <img src="https://docs.microsoft.com/en-us/media/learn/certification/badges/mcsa-badge.svg" alt="MCSA Badge">
+                        <span>MCSA: Web Applications</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>EDUCATION</h2>
+                    
+                    <div class="education-item">
+                        <h4>International Diploma in Information Systems (Engineering)</h4>
+                        <p>CTI | Bedfordview | 2005</p>
+                        <ul>
+                            <li>SQL Server 2000, VB6</li>
+                            <li>Program Design</li>
+                            <li>Relational Database Modelling & Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="education-item">
+                        <h4>Senior Certificate</h4>
+                        <p>Hoërskool Oosterlig | Boksburg | 2003</p>
+                        <ul>
+                            <li>Main subjects included Afrikaans, English, Maths, Science, Accounting.</li>
+                        </ul>
+                    </div>
+                </section>
+                
             </div>
-            <div><span><i class="fa-solid fa-at fa-sm"></i></span>
-              <span>Ruandv@gmail.com</span>
-            </div>
-            <div><span><i class="fa-brands fa-github fa-sm"></i></span>
-              <span><a href='https://www.github.com/ruandv'>Ruandv Github</a></span>
-            </div>
-          </div>
         </div>
-        <div class="history">
-          <div class='workingExperience'>
-            <h2>Working Experience</h2>
-            <div class='companyRecord'>
-              <div class='companyInfo'>
-                <div class='companyName'><a href='www.nintex.com'>Nintex</a></div>
-                <div class='companyDuration'>
-                  <p>Global</p>
-                  <p>2019-Current</p>
-                </div>
-                <div class='dot'></div>
-              </div>
-              <div class="employmentResponsibilities">
-                <div class='companyName'>Senior Engineer</div>
-                <p>
-                <ul>
-                  <li>I was part of a team that developed the <a
-                      href='https://play.google.com/store/apps/details?id=com.nintex.app'>Nintex Promapp mobile
-                      application</a>. </li>
-                  <li>Maintain parts of Promapp (generate from prompt, process models)</li>
-                  <li>Create POC projects for new ideas</li>
-                  <li>Provide guidance and training to junior staff</li>
-                  <li>Assist with test automation and setup of environments</li>
-                  <li>Implemented one of the first AI applications for promapp</li>
-                  <li>Working on getting a AI Agent designer up and running for the Nintex Workflow Cloud application</li>
-                  <li>Worked on multiple MFE (micro front end) applications to break down the Promapp Monolith application</li>
-                </ul>
-                </p>
-                <p>Technologies used: RestApi, Reactjs, Nodejs, C#, GitHub, Azure DevOps, Typescript</p>
-              </div>
-            </div>
-            <div class='companyRecord'>
-              <div class='companyInfo'>
-                <div class='companyName'><a href='www.absolutesys.com/'>Absolute Systems</a></div>
-                <div class='companyDuration'>
-                  <p>Johannesburg, Bryanston</p>
-                  <p>2017 - 2019</p>
-                </div>
-                <div class='dot'></div>
-              </div>
-              <div class="employmentResponsibilities">
-                <div class='companyName'>C# Developer</div>
-                <p>
-                <ul>
-                  <li>Support and re-write internal applications as time allow</li>
-                  <li>Integrate new devices into our existing Infrastructure to allow a wider variety of supported
-                    devices
-                  </li>
-                  <li>Write new applications in Angular 4 and Rest Api (.Net 4.7).</li>
-                </ul>
-                </p>
-                <p>Technologies used: RestApi, Angular 4</p>
-              </div>
-            </div>
-            <div class='companyRecord'>
-              <div class='companyInfo'>
-                <div class='companyName'><a href='www.clientele.co.za/'>Clientele Life</a></div>
-                <div class='companyDuration'>
-                  <p>Johannesburg, Rivonia</p>
-                  <p>2012 - 2017</p>
-                </div>
-                <div class='dot'></div>
-              </div>
-              <div class="employmentResponsibilities">
-                <div class='companyName'>C# Developer</div>
-                <p>
-                <ul>
-                  <li>Support and re-write internal applications as time allow</li>
-                  <li>Maintain the new Policy Creation application that our team designed and implemented from scratch
-                  </li>
-                  <li>Come up with better ways to make use of the OCR (ABBYY) system.</li>
-                </ul>
-                </p>
-                <p>Technologies used: RestApi, Angularjs, Entity Framework</p>
-              </div>
-            </div>
-          </div>
-          <div class='workingExperience'>
-            <h2>Education</h2>
-            <div class='companyRecord'>
-              <div class='companyInfo'>
-                <div class='companyName'><a href='https://www.CTI.co.za'>CTI</a></div>
-                <div class='companyDuration'>
-                  <p>Bedfordview</p>
-                  <p>2005</p>
-                </div>
-                <div class='dot'></div>
-              </div>
-              <div class="employmentResponsibilities">
-                <div class='companyName'>International Diploma in Information Systems (Engineering)</div>
-                <p>Main subjects included SQL Server 2000, VB6 (Not used for a very long time), Program Design,
-                  Relational
-                  Database Modelling & Design</p>
-              </div>
-            </div>
-            <div class='companyRecord'>
-              <div class='companyInfo'>
-                <div class='companyName'><a href='https://www.hsoosterlig.co.za/'>Hoërskool Oosterlig</a></div>
-                <div class='companyDuration'>
-                  <p>Boksburg</p>
-                  <p>2003</p>
-                </div>
-                <div class='dot'></div>
-              </div>
-              <div class="employmentResponsibilities">
-                <div class='companyName'>Senior Certificate</div>
-                <p>Main subjects included Afrikaans, English, Maths, Science, Accounting</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        
     </div>
-    <footer><a href="https://github.com/Ruandv/Ruandv.github.io/blob/master/CHANGELOG.md">Changelog</a></footer>
-  </div>
-  <script src="js/scripts.js"></script>
 </body>
-
 </html>
