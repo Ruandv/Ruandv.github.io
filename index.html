@@ -68,15 +68,15 @@
             display: flex;
             align-items: center;
         }
-        
+
         /* Placeholder for Icons */
         .contact-info span::before, .contact-info a::before {
-            content: '•'; 
+            content: '•';
             margin-right: 5px;
             color: var(--accent-color);
             font-weight: 600;
         }
-        
+
         /* ------------------ Main Content Layout ------------------ */
         .content {
             padding: 40px;
@@ -84,7 +84,7 @@
             grid-template-columns: 1fr 300px; /* Main content and sidebar for qualifications/education */
             gap: 40px;
         }
-        
+
         .main-section {
             padding-right: 20px;
             border-right: 1px solid var(--light-gray);
@@ -113,7 +113,7 @@
             font-size: 1.05em;
             margin-bottom: 15px;
         }
-        
+
         .profile-photo {
             float: right;
             margin: 0 0 15px 15px;
@@ -130,7 +130,7 @@
             padding-bottom: 15px;
             border-bottom: 1px dashed var(--light-gray);
         }
-        
+
         .experience-item:last-child, .project-item:last-child, .education-item:last-child {
             border-bottom: none;
             margin-bottom: 0;
@@ -168,56 +168,56 @@
             font-size: 0.9em;
             margin-top: 10px;
         }
-        
+
         /* ------------------ Qualifications & Education (Sidebar) ------------------ */
         .qualification-item {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
-        
+
         .qualification-item img {
             width: 40px;
             height: 40px;
             margin-right: 10px;
         }
-        
+
         .qualification-item span {
             font-weight: 600;
         }
-        
+
         .education-item h4 {
             font-size: 1.1em;
             font-weight: 600;
             margin: 0;
             color: var(--primary-color);
         }
-        
+
         .education-item p {
             margin: 2px 0 5px 0;
             font-size: 0.9em;
             color: #777;
         }
-        
+
         .education-item ul {
             list-style: none;
             padding-left: 0;
             font-size: 0.9em;
         }
-        
+
         .education-item ul li {
             position: relative;
             padding-left: 15px;
             margin-bottom: 3px;
         }
-        
+
         .education-item ul li::before {
             content: '›';
             position: absolute;
             left: 0;
             color: var(--accent-color);
         }
-        
+
         /* ------------------ Media Queries for Responsiveness ------------------ */
         @media (max-width: 768px) {
             .container {
@@ -229,22 +229,22 @@
                 grid-template-columns: 1fr;
                 padding: 20px;
             }
-            
+
             .main-section {
                 padding-right: 0;
                 border-right: none;
             }
-            
+
             .sidebar {
                 padding-left: 0;
             }
-            
+
             .profile-photo {
                 float: none;
                 display: block;
                 margin: 10px auto 20px auto;
             }
-            
+
             .header {
                 padding: 20px;
             }
@@ -253,10 +253,10 @@
 </head>
 <body>
     <div class="container">
-        
+
         <div class="header">
             <h1>Ruan de Villiers</h1>
-            <p>Senior Software Engineer & AI Specialist</p>
+            <p>Senior Software Engineer &amp; AI Specialist</p>
             <div class="contact-info">
                 <span>Johannesburg, South Africa, Gauteng</span>
                 <span>+27 (83) 454-5355</span>
@@ -266,17 +266,17 @@
         </div>
 
         <div class="content">
-            
+
             <div class="main-section">
-                
+
                 <section class="about-me">
                     <img src="./images/myPhoto.png" alt="Ruan de Villiers Profile Photo" class="profile-photo">
                     <h2>ABOUT ME</h2>
                     <p>
-                        As a Senior Engineer, my current focus is leveraging **React, Node.js, and C#** to build scalable, cloud-based applications and microservices. I am deeply passionate about the intersection of software development and **Artificial Intelligence**, always seeking challenging opportunities to apply cutting-edge technologies.
+                        As a Senior Engineer, my current focus is leveraging <strong>React, Node.js, and C#</strong> to build scalable, cloud-based applications and microservices. I am deeply passionate about the intersection of modern web technologies and artificial intelligence, aiming to create products that are both innovative and practical for business and end users.
                     </p>
                     <p>
-                        I am always looking for a challenge and ways to better myself as an engineer in the IT Industry, enjoying POC projects with **Arduino, NodeJs, and AI related technologies** to drive innovation in development processes and applications.
+                        I am always looking for a challenge and ways to better myself as an engineer in the IT Industry, enjoying POC projects with <strong>Arduino, NodeJs, and AI related technologies</strong> to satisfy my curiosity and stay abreast with disruptive innovation.
                     </p>
                     <div style="clear: both;"></div>
                 </section>
@@ -289,7 +289,7 @@
                         <span class="company-info">Nintex | Global | 2019-Current</span>
                         <ul>
                             <li>I was part of a team that developed the <a href="https://play.google.com/store/apps/details?id=com.nintex.app" target="_blank">Nintex Promapp mobile application</a>.</li>
-                            <li>**Key AI Implementation:** Implemented one of the first AI applications for Promapp and am currently working on an AI Agent designer for the Nintex Workflow Cloud application.</li>
+                            <li><strong>Key AI Implementation:</strong> Implemented one of the first AI applications for Promapp and am currently working on an AI Agent designer for the Nintex Workflow Cloud application.</li>
                             <li>Maintain parts of Promapp (generate from prompt, process models) and create POC projects for new ideas.</li>
                             <li>Worked on multiple MFE (micro front end) applications to break down the Promapp Monolith application.</li>
                             <li>Provide guidance and training to junior staff; assist with test automation and setup of environments.</li>
@@ -307,7 +307,7 @@
                         </ul>
                         <p class="technologies">Technologies used: RestApi, Angular 4</p>
                     </div>
-                    
+
                     <div class="experience-item">
                         <h3 class="job-title">C# Developer</h3>
                         <span class="company-info">Clientele Life | Johannesburg, Rivonia | 2012 - 2017</span>
@@ -322,39 +322,39 @@
                 </section>
 
                 <section>
-                    <h2>FEATURED PROJECTS & CONTRIBUTIONS</h2>
+                    <h2>FEATURED PROJECTS &amp; CONTRIBUTIONS</h2>
                     <p>A selection of personal Proof-of-Concept projects and Open Source contributions showcasing a passion for innovation and diverse technologies.</p>
-                    
+
                     <div class="project-item">
                         <h3 class="job-title">AI/IoT Proof-of-Concept Projects</h3>
-                        <span class="company-info">Personal & Research Initiatives</span>
+                        <span class="company-info">Personal &amp; Research Initiatives</span>
                         <ul>
-                            <li>Focus on small-scale projects using **Arduino and NodeJs** to explore automation and edge computing solutions.</li>
-                            <li>Ongoing exploration into **AI-related POCs** to stay current with the latest machine learning and agent technologies. (Mentioned in About Me)</li>
+                            <li>Focus on small-scale projects using <strong>Arduino and NodeJs</strong> to explore automation and edge computing solutions.</li>
+                            <li>Ongoing exploration into <strong>AI-related POCs</strong> to stay current with the latest machine learning and agent technologies. (Mentioned in About Me)</li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <h3 class="job-title">Open Source Contribution: Carettab</h3>
                         <a class="company-info" href="https://github.com/bluecaret/carettab" target="_blank">View on GitHub</a>
                     </div>
-                    
+
                     <div class="project-item">
                         <h3 class="job-title">Open Source Contribution: WiFi Manager (ESP)</h3>
                         <a class="company-info" href="https://github.com/tzapu/WiFiManager" target="_blank">View on GitHub</a>
                     </div>
-                    
+
                     <div class="project-item">
                         <h3 class="job-title">Open Source Contribution: planfree.dev</h3>
                         <a class="company-info" href="https://github.com/LukeGarrigan/planfree.dev" target="_blank">View on GitHub</a>
                     </div>
 
                 </section>
-                
+
             </div>
 
             <div class="sidebar">
-                
+
                 <section>
                     <h2>MICROSOFT QUALIFICATIONS</h2>
                     <div class="qualification-item">
@@ -373,17 +373,17 @@
 
                 <section>
                     <h2>EDUCATION</h2>
-                    
+
                     <div class="education-item">
                         <h4>International Diploma in Information Systems (Engineering)</h4>
                         <p>CTI | Bedfordview | 2005</p>
                         <ul>
                             <li>SQL Server 2000, VB6</li>
                             <li>Program Design</li>
-                            <li>Relational Database Modelling & Design</li>
+                            <li>Relational Database Modelling &amp; Design</li>
                         </ul>
                     </div>
-                    
+
                     <div class="education-item">
                         <h4>Senior Certificate</h4>
                         <p>Hoërskool Oosterlig | Boksburg | 2003</p>
@@ -392,10 +392,10 @@
                         </ul>
                     </div>
                 </section>
-                
+
             </div>
         </div>
-        
+
     </div>
 </body>
 </html>
