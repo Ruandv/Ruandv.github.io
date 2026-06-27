@@ -7,10 +7,56 @@
     <link rel="canonical" href="https://hammer-sync.wonderfulbeach-5adf2ccd.southafricanorth.azurecontainerapps.io/" />
     
     <title>Redirecting...</title>
+    <style>
+        body {
+            background-color: #1a1a1a; 
+            background-image: url("https://hammer-sync.wonderfulbeach-5adf2ccd.southafricanorth.azurecontainerapps.io/Hammer_Sync_Logo_1408_768.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h1, #fallback-link {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 12px 24px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #4af;
+        }
+
+        /* 1. Hide the fallback block initially */
+        #fallback-link {
+            opacity: 0;
+            /* Runs the 'fadeIn' animation over 1 second, after a 10-second delay */
+            animation: fadeIn 1s forwards;
+            animation-delay: 10s; 
+        }
+
+        /* 2. Define the fade-in sequence */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Please hold on while we redirect you...</h1>
-    <p>If you are not automatically redirected, please <a href="https://hammer-sync.wonderfulbeach-5adf2ccd.southafricanorth.azurecontainerapps.io/">click here</a>.</p>
+
+    <div id="fallback-link">
+        <p style="margin: 0;">If you are not automatically redirected, please <a href="https://hammer-sync.wonderfulbeach-5adf2ccd.southafricanorth.azurecontainerapps.io/">click here</a>.</p>
+    </div>
 
     <script>
         window.location.href = "https://hammer-sync.wonderfulbeach-5adf2ccd.southafricanorth.azurecontainerapps.io/";
