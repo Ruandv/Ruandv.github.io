@@ -1,0 +1,10 @@
+modules:
+  - name: site
+    path: "."
+    description: "Static personal GitHub Pages site (static HTML/CSS/JS)."
+    load-when:
+      - "index.html: changes to main site entry"
+      - "package.json: changes to npm metadata or scripts"
+      - "README.md: changes to site description/docs"
+    skip-when: []
+    last-verified: "TODO: 2026-07-17"
